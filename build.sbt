@@ -1,12 +1,12 @@
 ThisBuild / scalaVersion := "3.6.4"
 ThisBuild / organization := "com.github.boniface"
-ThisBuild / version := "0.1.0"
+ThisBuild / version := "0.1.1"
 
 ThisBuild / versionScheme := Some("early-semver")
 ThisBuild / licenses := Seq("MIT" -> url("https://opensource.org/licenses/MIT"))
 ThisBuild / description := "Scala 3 Libraries for use across Scala 3 Projects"
 ThisBuild / homepage := Some(
-  url("https://github.com/boniface/hash-media-deps-plugin")
+  url("https://github.com/boniface/scala-base-libs")
 )
 ThisBuild / resolvers ++= Seq(
   "Akka library repository".at("https://repo.akka.io/maven"),
@@ -14,20 +14,15 @@ ThisBuild / resolvers ++= Seq(
 )
 ThisBuild / scmInfo := Some(
   ScmInfo(
-    url("https://github.com/boniface/hash-media-deps-plugin"),
-    "scm:git:git@github.com:boniface/hash-media-deps-plugin.git",
+    url("https://github.com/boniface/scala-base-libs"),
+    "scm:git:git@github.com:boniface/scala-base-libs.git",
   )
 )
 
 lazy val root = (project in file("."))
   .settings(
     name := "scala-base-libs",
-    libraryDependencies ++= Seq(
-      "org.typelevel" %% "cats-core" % "2.13.0",
-      "io.circe" %% "circe-core" % "0.14.12",
-      "org.http4s" %% "http4s-core" % "0.23.30",
-      "org.scalatest" %% "scalatest" % "3.2.19" % Test
-    )
+    libraryDependencies ++= Dependencies.all,
   )
 
 publishMavenStyle := true
