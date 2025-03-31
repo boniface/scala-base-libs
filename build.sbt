@@ -1,6 +1,6 @@
 ThisBuild / scalaVersion := "3.6.4"
 ThisBuild / organization := "com.github.boniface"
-ThisBuild / version := "0.1.1"
+ThisBuild / version := "0.1.2"
 
 ThisBuild / versionScheme := Some("early-semver")
 ThisBuild / licenses := Seq("MIT" -> url("https://opensource.org/licenses/MIT"))
