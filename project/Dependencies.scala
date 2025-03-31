@@ -279,7 +279,7 @@ object Dependencies {
     val scalaTest = "3.2.19"
     val scalaCheck = "1.18.1"
     val zio = "2.1.16"
-    val zioHttp = "3.1.0"
+    val zioHttp = "3.2.0"
     val cassandra = "4.19.0"
     val testContainers = "0.43.0"
     val logbackV = "1.5.18"
@@ -288,7 +288,7 @@ object Dependencies {
     val akka = "2.9.5"
     val akkaHttp = "10.6.3"
     val gRPC = "1.71.0"
-    val googleProto = "4.30.1"
+    val googleProto = "4.30.2"
     val chimney = "1.7.3"
     val airframeVersion = "2025.1.8"
     val mockito = "5.14.2"
@@ -301,7 +301,7 @@ object Dependencies {
     val AkkaManagementVersion = "1.5.2"
     val akkaGrpc = "2.4.3"
     val tapirVersion = "1.11.20"
-    val scyllaDBVersion = "4.18.1.0"
+    val scyllaDBVersion = "4.19.0.0"
   }
   val all: Seq[ModuleID] =
     Circe.all ++ Zio.all ++ ScalaTest.all ++ ZioTest.all ++
